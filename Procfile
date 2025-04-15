@@ -1,3 +1,1 @@
-web: gunicorn healtcare.wsgi
-
-web: python mange.py migrate && gunicorn healtcare.wsgi 
+web: python manage.py migrate && gunicorn healthcare.wsgi --log-file -
