@@ -19,7 +19,17 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*']  # You can replace '*' with your Railway domain later
 
-# # Static files (if not already in common.py)
+
+# SQLite database config
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+# # Static
+# 
+# files (if not already in common.py)
 # STATIC_URL = '/static/'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
