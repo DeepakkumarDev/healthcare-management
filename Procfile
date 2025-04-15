@@ -1,1 +1,2 @@
-web: python manage.py migrate && gunicorn healthcare.wsgi --log-file -
+web: python manage.py collectstatic --noinput && gunicorn healthcare.wsgi --log-file -
+
